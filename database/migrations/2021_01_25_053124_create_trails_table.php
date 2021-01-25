@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCollectionsTable extends Migration
+class CreateTrailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateCollectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('collections', function (Blueprint $table) {
+        Schema::create('trails', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('subTitle');
-            $table->string('bgColor');
-            $table->string('iconImage');
+            $table->string('location');
+            $table->integer('distance');
+            $table->string('coverImage');
             $table->timestamps();
         });
     }
@@ -30,7 +30,6 @@ class CreateCollectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('collections');
+        Schema::dropIfExists('trails');
     }
-
 }

@@ -22,7 +22,5 @@ class CollectionSeeder extends Seeder
         $row->bgColor = 'yellow1';
         $row->iconImage = 'https://example.com/uploads/images/collection/0/icon.png';
         $row->save();
-
-        
     }
 }
