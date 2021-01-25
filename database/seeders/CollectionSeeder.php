@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\Collection;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;  
 
 class CollectionSeeder extends Seeder
 {
